@@ -1,0 +1,49 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+//Header
+@import 'header';
+
+//Left Navigation
+@import 'leftnavigation';
+
+//Editors Section
+@import 'editorsection';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.padding-0{
+	padding: 0;
+}
+
+.hover-underline-animation{
+	display: inline-block;
+	position: relative;
+	color: $aqua-blue;
+}
+.hover-underline-animation::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 3vh;
+	left: 0;
+	background-color: $aqua-blue;
+	transform-origin: bottom right;
+	transition: $animation-underline-transition;
+}
+.hover-underline-animation:hover::after {
+	transform: scaleX(1);
+	transform-origin: $animation-transformation-origin;
+}

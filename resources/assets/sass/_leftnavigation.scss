@@ -1,0 +1,33 @@
+.img-fix-size{
+	width: $image-icon-width;
+	height: $image-icon-height;
+}
+.navigation-container{
+	border-right: $border-rgba-grey;
+	height: 100%;
+
+	ul{
+		list-style-type: none;
+
+		a{
+			text-decoration: none;
+			font-weight: bold;
+		}
+		
+		a:active, a:visited{
+			color: $link-color;
+		}
+
+		a:hover{
+			color: $link-color-focus;
+		}
+
+		li{
+			line-height: 10vh;
+			border-bottom: $border-rgba-grey;
+		}
+		li:first-child{
+			border-top: $border-rgba-grey;	
+		}
+	}
+}
